@@ -152,16 +152,170 @@
           }
           document.getElementsByTagName('td')[`${aj}`].innerHTML=`X`;
 
+          function newGame(){
+            function getRandomIntInclusive(min, max) {
+              min = Math.ceil(min);
+              max = Math.floor(max);
+              return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+            let random=getRandomIntInclusive(0,8);
+            console.log(`${random}`);
+            if(`${random}`==0){
+              if(II.cell0=='empty'){
+                document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
+              }else if(II.cell0=='X'){
+                console.log('II.cell0==X');
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else if(II.cell0=='O'){
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else{
+                getRandomIntInclusive(0,8);
+                console.log(random);
+                newGame();
+              }
+              console.log('ooo');
+              // if(getRandomIntInclusive)
+            }else if(`${random}`==1){
+              if(II.cell1=='empty'){
+                document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
 
-          function getRandomIntInclusive(min, max) {
-            min = Math.ceil(min);
-            max = Math.floor(max);
-            return Math.floor(Math.random() * (max - min + 1)) + min;
+              }else if(II.cell1=='X'){
+                console.log('II.cell0==X');
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else if(II.cell1=='O'){
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else{
+                console.log(random);
+                getRandomIntInclusive(0,8);
+                newGame();
+
+              }
+              console.log('2222');
+            }else if(`${random}`==2){
+              if(II.cell2=='empty'){
+                document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
+
+              }else if(II.cell2=='X'){
+                console.log('II.cell2==X');
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else if(II.cell2=='O'){
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else{
+                console.log(random);
+                getRandomIntInclusive(0,8);
+                newGame();
+              }
+              console.log('2');
+            }else if(`${random}`==3){
+              if(II.cell3=='empty'){
+                document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
+
+              }else if(II.cell3=='X'){
+                console.log('II.cell3==X');
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else if(II.cell3=='O'){
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else{
+                console.log(random);
+                getRandomIntInclusive(0,8);
+                newGame();
+              }
+              console.log('3333');
+            }else if(`${random}`==4){
+              if(II.cell4=='empty'){
+                document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
+
+              }else if(II.cell4=='X'){
+                console.log('II.cell0==X');
+                getRandomIntInclusive(0,8);
+              }else if(II.cell4=='O'){
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else{
+                console.log(random);
+                getRandomIntInclusive(0,8);
+                newGame();
+              }
+              console.log('444442');
+            }else if(`${random}`==5){
+              if(II.cell5=='empty'){
+                document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
+
+              }else if(II.cell5=='X'){
+                console.log('II.cell0==X');
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else if(II.cell5=='O'){
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else{
+                getRandomIntInclusive(0,8);
+
+                newGame();
+              }
+              console.log('55552');
+            }else if(`${random}`==6){
+              if(II.cell6=='empty'){
+                document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
+
+              }else if(II.cell6=='X'){
+                console.log('||II.cell0==X');
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else if(II.cell6=='O'){
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else{
+                console.log(random);
+                getRandomIntInclusive(0,8);
+
+                newGame();
+              }
+              console.log('66662');
+            }else if(`${random}`==7){
+              if(II.cell7=='empty'){
+                document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
+              }else if(II.cell7=='X'){
+                console.log('||II.cell0==X');
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else if(II.cell7=='O'){
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else{
+                console.log(random);
+                getRandomIntInclusive(0,8);
+                newGame();
+              }
+              console.log('7772');
+            }else if(`${random}`==8){
+              if(II.cell8=='empty'){
+                document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
+
+              }else if(II.cell8=='X'){
+                console.log('||II.cell0==X');
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else if(II.cell8=='O'){
+                getRandomIntInclusive(0,8);
+                newGame();
+              }else{
+                console.log(random);
+                getRandomIntInclusive(0,8);
+                newGame();
+              }
+              console.log('888');
+            }
           }
-          console.log(getRandomIntInclusive(0,8));
-          if(getRandomIntInclusive(0,8)){
-            document.getElementsByTagName('td')[getRandomIntInclusive(0,8)].innerHTML=`O`;
-          }
+          newGame();
         });
 
       }
