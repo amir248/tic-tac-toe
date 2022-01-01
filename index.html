@@ -245,13 +245,12 @@
                 console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
                 II.cell4='O';
-
               }else if(II.cell4=='X'){
                 console.log('II.cell0==X');
-                // getRandomIntInclusive(0,8);
+                return newGame();
               }else if(II.cell4=='O'){
                 // getRandomIntInclusive(0,8);
-                return    newGame();
+                return newGame();
               }else{
                 console.log(random);
                 // getRandomIntInclusive(0,8);
