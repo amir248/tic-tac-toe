@@ -521,39 +521,39 @@
       document.getElementsByTagName('tr')[0].addEventListener('click',()=>{
         if(II.cell0=='O'&&II.cell1=='O'&&II.cell2=='O'){
             allert.innerHTML="O_WINNER";
-            displayBlocked();
+    displayBlocked_O();
         }else if(II.cell3=='O'&&II.cell4=='O'&&II.cell5=='O'){
           allert.innerHTML="O_WINNER";
-          displayBlocked();
+        displayBlocked_O();
           ahtung.innerHTML="😱 Нолики победили!";
 
         }else if(II.cell6=='O'&&II.cell7=='O'&&II.cell8=='O'){
           allert.innerHTML="O_WINNER";
-          displayBlocked();
+    displayBlocked_O();
           ahtung.innerHTML="😱 Нолики победили!";
 
         }else if(II.cell0=='O'&&II.cell4=='O'&&II.cell8=='O'){
           allert.innerHTML="O_WINNER";
-          displayBlocked();
+    displayBlocked_O();
           ahtung.innerHTML="😱 Нолики победили!";
 
         }else if(II.cell2=='O'&&II.cell4=='O'&&II.cell6=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
-          displayBlocked();
+        displayBlocked_O();
         }else if(II.cell0=='O'&&II.cell3=='O'&&II.cell6=='O'){
           allert.innerHTML="O_WINNER";
-          displayBlocked();
+          displayBlocked_O();
           ahtung.innerHTML="😱 Нолики победили!";
         }else if(II.cell2=='O'&&II.cell5=='O'&&II.cell8=='O'){
           allert.innerHTML="O_WINNER";
-          displayBlocked();
+    displayBlocked_O();
           ahtung.innerHTML="😱 Нолики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
         }else if(II.cell1=='O'&&II.cell4=='O'&&II.cell7=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
-          displayBlocked();
+          displayBlocked_O();
         }else{
           console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
         }
@@ -567,7 +567,6 @@
         }else if(II.cell3=='O'&&II.cell4=='O'&&II.cell5=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
-          console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
 
           displayBlocked_O();
 
@@ -579,9 +578,9 @@
 
         }else if(II.cell0=='O'&&II.cell4=='O'&&II.cell8=='O'){
           allert.innerHTML="O_WINNER";
-          ahtung.innerHTML="🤩Крестики победили!";
+          ahtung.innerHTML="😱 Нолики победили!";
 
-          displayBlocked();
+          displayBlocked_O();
         }else if(II.cell2=='O'&&II.cell4=='O'&&II.cell6=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
