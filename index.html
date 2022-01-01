@@ -318,7 +318,7 @@
               console.log('888');
             }
           }
-          return    newGame();
+          return  newGame();
 
 
         });
@@ -376,6 +376,13 @@
       }
 
       document.getElementsByTagName('tr')[0].addEventListener('click',()=>{
+        // switch(II.cell0){
+        //   // console.log('brack;');
+        //   case 'X' : console.log('XXX');
+        //   return newGame();
+        //   case 'O' : console.log('OOX');
+        //   return newGame();
+        // }
         if(II.cell0=='X'&&II.cell1=='X'&&II.cell2=='X'){
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
             allert.innerHTML="X_WINNER";
@@ -515,7 +522,7 @@
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
           displayBlocked();
         }else{
-          console.log('!33333333333333333333333333333333333333333333333333333333')
+          console.log('!33333333333333333333333333333333333333333333333333333333');
         }
       });
       document.getElementsByTagName('tr')[0].addEventListener('click',()=>{
@@ -654,4 +661,18 @@
       });
     </script>
   </body>
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(85260418, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/85260418" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </html>
