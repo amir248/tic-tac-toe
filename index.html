@@ -60,14 +60,100 @@
       </article>
     </main>
     <script>
+    const II={
+      cell0 : 'empty',
+      cell1 : 'empty',
+      cell2 : 'empty',
+      cell3 : 'empty',
+      cell4 : 'empty',
+      cell5 : 'empty',
+      cell6 : 'empty',
+      cell7 : 'empty',
+      cell8 : 'empty'
+  };
+    //columns
+    columns0={
+      cell0 : '',
+      cell1 : '',
+      cell2 : ''
+    };
+    columns1={
+      cell3 : '',
+      cell4 : '',
+      cell5 : ''
+    };
+    columns2={
+      cell6 : '',
+      cell7 : '',
+      cell8 : ''
+    };
       for(let aj=0; aj<9;aj++){
         document.getElementsByTagName('td')[`${aj}`].addEventListener('click',()=>{
-          console.log('cell'+`${aj}`);
+          if(`${aj}`==0){
+            if(II.cell0=='empty'){
+              II.cell0="X";
+            }else{
+              console.log("EST");
+            }
+          }else if(`${aj}`==1){
+            if(II.cell1=='empty'){
+              II.cell1="X";
+            }else{
+              console.log("EST");
+            }
+          }else if(`${aj}`==2){
+            if(II.cell2=='empty'){
+              II.cell2="X";
+            }else{
+              console.log("EST");
+            }
+          }else if(`${aj}`==3){
+            if(II.cell3=='empty'){
+              II.cell3="X";
+            }else{
+              console.log("EST");
+            }
+          }else if(`${aj}`==4){
+            if(II.cell4=='empty'){
+              II.cell4="X";
+            }else{
+              console.log("EST");
+            }
+          }else if(`${aj}`==5){
+            if(II.cell5=='empty'){
+              II.cell5="X";
+            }else{
+              console.log("EST");
+            }
+          }else if(`${aj}`==6){
+            if(II.cell6=='empty'){
+              II.cell6="X";
+            }else{
+              console.log("EST");
+            }
+          }else if(`${aj}`==7){
+            if(II.cell7=='empty'){
+              II.cell7="X";
+            }else{
+              console.log("EST");
+            }
+          }else if(`${aj}`==8){
+            if(II.cell8=='empty'){
+              II.cell8="X";
+            }else{
+              console.log("EST");
+            }
+          }else{
+            if(II.cell9=='empty'){
+              II.cell9="X";
+            }else{
+              console.log("EST");
+            }
+          }
           document.getElementsByTagName('td')[`${aj}`].innerHTML=`X`;
         });
       }
 
-      const II={};
 
 
     </script>
