@@ -57,8 +57,8 @@
           <tr><td></td><td></td><td></td></tr>
         </tbody>
         </table>
-        <br><span id='ahtung'></span>
-        <button align="center" value="Refresh Page" onclick="window.location.reload();">Сброс игры</button>
+        <br><span id='ahtung'></span><span id='win'></span>
+        <button align="center" value="Refresh Page" onclick="window.location.reload();" style="z-index:0;">Сброс игры</button>
       </article>
     </main>
     <script>
@@ -342,7 +342,7 @@
 
       }
       function displayBlocked(){
-        document.querySelector('#ahtung').style.cssText=`
+        document.querySelector('#win').style.cssText=`
         display:flex;
         position:absolute;
         justify-content:center;
@@ -351,19 +351,20 @@
         height:100vh;
         background:coral;
         `;
-        document.querySelector('#ahtung').innerHTML="<span style='font-size:55px;color:yellow;'>winner</span>";
+        document.querySelector('#win').innerHTML="<span style='font-size:75px;color:yellow;text-shadow:1px 1px 2px black;'>winner</span>";
         setTimeout(()=>{
           console.log('33333333333333333rthgsfgrsdafergserg');
-          document.querySelector('#ahtung').style.cssText=`
+          document.querySelector('#win').style.cssText=`
           display:flex;
+          position:absolute;
           justify-content:center;
           align-items:center;
-          width:0;
-          height:0;
-          background:none;
+          width:100%;
+          height:100vh;
+          background:rgba(10,0,0,0.1);
           `
         },1000);
-        setTimeout(console.log("fdfefef"),3000);
+        // setTimeout(window.location.reload(),3000);
       }
       document.getElementsByTagName('tr')[0].addEventListener('click',()=>{
         if(II.cell0=='X'&&II.cell1=='X'&&II.cell2=='X'){
@@ -417,37 +418,45 @@
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
             allert.innerHTML="X_WINNER";
+            displayBlocked();
         }else if(II.cell3=='X'&&II.cell4=='X'&&II.cell5=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
 
+          displayBlocked();
         }else if(II.cell6=='X'&&II.cell7=='X'&&II.cell8=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
 
+          displayBlocked();
         }else if(II.cell0=='X'&&II.cell4=='X'&&II.cell8=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
 
+          displayBlocked();
         }else if(II.cell2=='X'&&II.cell4=='X'&&II.cell6=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+          displayBlocked();
         }else if(II.cell0=='X'&&II.cell3=='X'&&II.cell6=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+          displayBlocked();
         }else if(II.cell2=='X'&&II.cell5=='X'&&II.cell8=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+          displayBlocked();
         }else if(II.cell1=='X'&&II.cell4=='X'&&II.cell7=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+          displayBlocked();
         }else{
           console.log('22222222222222222222222222222222222222222222222222')
         }
@@ -457,37 +466,45 @@
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
             allert.innerHTML="X_WINNER";
+            displayBlocked();
         }else if(II.cell3=='X'&&II.cell4=='X'&&II.cell5=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
 
+          displayBlocked();
         }else if(II.cell6=='X'&&II.cell7=='X'&&II.cell8=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
 
+          displayBlocked();
         }else if(II.cell0=='X'&&II.cell4=='X'&&II.cell8=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
 
+          displayBlocked();
         }else if(II.cell2=='X'&&II.cell4=='X'&&II.cell6=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+          displayBlocked();
         }else if(II.cell0=='X'&&II.cell3=='X'&&II.cell6=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+          displayBlocked();
         }else if(II.cell2=='X'&&II.cell5=='X'&&II.cell8=='X'){
           allert.innerHTML="X_WINNER";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
           ahtung.innerHTML="🤩Крестики победили!";
+          displayBlocked();
         }else if(II.cell1=='X'&&II.cell4=='X'&&II.cell7=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+          displayBlocked();
         }else{
           console.log('!33333333333333333333333333333333333333333333333333333333')
         }
