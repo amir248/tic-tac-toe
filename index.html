@@ -151,7 +151,19 @@
             }
           }
           document.getElementsByTagName('td')[`${aj}`].innerHTML=`X`;
+
+
+          function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+          }
+          console.log(getRandomIntInclusive(0,8));
+          if(getRandomIntInclusive(0,8)){
+            document.getElementsByTagName('td')[getRandomIntInclusive(0,8)].innerHTML=`O`;
+          }
         });
+
       }
 
 
