@@ -49,7 +49,7 @@
   <body>
     <main>
       <article>
-        <h1>tic-tac-toe</h1>
+        <h1>tic-tac-toe<span style="color:red" id='allert'></span></h1>
         <table>
         <tbody>
           <tr><td></td><td></td><td></td></tr>
@@ -87,6 +87,7 @@
       cell7 : '',
       cell8 : ''
     };
+
       for(let aj=0; aj<9;aj++){
         document.getElementsByTagName('td')[`${aj}`].addEventListener('click',()=>{
           if(`${aj}`==0){
@@ -159,168 +160,255 @@
               return Math.floor(Math.random() * (max - min + 1)) + min;
             }
             let random=getRandomIntInclusive(0,8);
-            console.log(`${random}`);
+            console.log(`${random}`+'RANDOM');
             if(`${random}`==0){
               if(II.cell0=='empty'){
+                console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
+                II.cell0='O';
               }else if(II.cell0=='X'){
                 console.log('II.cell0==X');
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+               return newGame();
               }else if(II.cell0=='O'){
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+               return newGame();
               }else{
-                getRandomIntInclusive(0,8);
-                console.log(random);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                console.log(random+'0000000000000');
+              return  newGame();
               }
               console.log('ooo');
               // if(getRandomIntInclusive)
             }else if(`${random}`==1){
               if(II.cell1=='empty'){
+                console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
 
+                II.cell1='O';
               }else if(II.cell1=='X'){
                 console.log('II.cell0==X');
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                  return  newGame();
               }else if(II.cell1=='O'){
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                  return  newGame();
               }else{
                 console.log(random);
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                return    newGame();
 
               }
               console.log('2222');
             }else if(`${random}`==2){
               if(II.cell2=='empty'){
+                console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
+                II.cell2='O';
 
               }else if(II.cell2=='X'){
                 console.log('II.cell2==X');
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                return    newGame();
               }else if(II.cell2=='O'){
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                  return  newGame();
               }else{
                 console.log(random);
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                return    newGame();
               }
               console.log('2');
             }else if(`${random}`==3){
               if(II.cell3=='empty'){
+                console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
+                II.cell3='O';
 
               }else if(II.cell3=='X'){
                 console.log('II.cell3==X');
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                  return  newGame();
               }else if(II.cell3=='O'){
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                return    newGame();
               }else{
                 console.log(random);
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                  return  newGame();
               }
               console.log('3333');
             }else if(`${random}`==4){
               if(II.cell4=='empty'){
+                console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
+                II.cell4='O';
 
               }else if(II.cell4=='X'){
                 console.log('II.cell0==X');
-                getRandomIntInclusive(0,8);
+                // getRandomIntInclusive(0,8);
               }else if(II.cell4=='O'){
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                return    newGame();
               }else{
                 console.log(random);
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                return    newGame();
               }
               console.log('444442');
             }else if(`${random}`==5){
               if(II.cell5=='empty'){
+                console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
+                II.cell5='O';
 
               }else if(II.cell5=='X'){
                 console.log('II.cell0==X');
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                return    newGame();
               }else if(II.cell5=='O'){
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                return    newGame();
               }else{
-                getRandomIntInclusive(0,8);
+                // getRandomIntInclusive(0,8);
 
-                newGame();
+                return    newGame();
               }
               console.log('55552');
             }else if(`${random}`==6){
               if(II.cell6=='empty'){
+                console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
+                II.cell6='O';
 
               }else if(II.cell6=='X'){
                 console.log('||II.cell0==X');
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                return    newGame();
               }else if(II.cell6=='O'){
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                  return  newGame();
               }else{
                 console.log(random);
-                getRandomIntInclusive(0,8);
+                // getRandomIntInclusive(0,8);
 
-                newGame();
+                return    newGame();
               }
               console.log('66662');
             }else if(`${random}`==7){
               if(II.cell7=='empty'){
+                console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
+                II.cell7='O';
               }else if(II.cell7=='X'){
                 console.log('||II.cell0==X');
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                return    newGame();
               }else if(II.cell7=='O'){
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                return    newGame();
               }else{
                 console.log(random);
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                return    newGame();
               }
               console.log('7772');
             }else if(`${random}`==8){
               if(II.cell8=='empty'){
+                console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
+                II.cell8='O';
 
               }else if(II.cell8=='X'){
                 console.log('||II.cell0==X');
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                return    newGame();
               }else if(II.cell8=='O'){
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                return    newGame();
               }else{
                 console.log(random);
-                getRandomIntInclusive(0,8);
-                newGame();
+                // getRandomIntInclusive(0,8);
+                return    newGame();
               }
               console.log('888');
             }
           }
-          newGame();
+          return    newGame();
+
+
         });
 
       }
+      document.getElementsByTagName('tr')[0].addEventListener('click',()=>{
+        if(II.cell0=='X'&&II.cell1=='X'&&II.cell2=='X'){
+          console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+            allert.innerHTML="X_WINNER";
+        }else if(II.cell3=='X'&&II.cell4=='X'&&II.cell5=='X'){
+          allert.innerHTML="X_WINNER";
+          console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
 
+        }else if(II.cell6=='X'&&II.cell7=='X'&&II.cell8=='X'){
+          allert.innerHTML="X_WINNER";
+          console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
 
+        }else if(II.cell0=='X'&&II.cell4=='X'&&II.cell8=='X'){
+          allert.innerHTML="X_WINNER";
+          console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+
+        }else if(II.cell2=='X'&&II.cell4=='X'&&II.cell6=='X'){
+          allert.innerHTML="X_WINNER";
+          console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+        }else{
+          console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+        }
+      });
+      document.getElementsByTagName('tr')[1].addEventListener('click',()=>{
+        if(II.cell0=='X'&&II.cell1=='X'&&II.cell2=='X'){
+          console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+            allert.innerHTML="X_WINNER";
+        }else if(II.cell3=='X'&&II.cell4=='X'&&II.cell5=='X'){
+          allert.innerHTML="X_WINNER";
+          console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+
+        }else if(II.cell6=='X'&&II.cell7=='X'&&II.cell8=='X'){
+          allert.innerHTML="X_WINNER";
+          console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+
+        }else if(II.cell0=='X'&&II.cell4=='X'&&II.cell8=='X'){
+          allert.innerHTML="X_WINNER";
+          console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+
+        }else if(II.cell2=='X'&&II.cell4=='X'&&II.cell6=='X'){
+          allert.innerHTML="X_WINNER";
+          console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+        }else{
+          console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+        }
+      });
+      document.getElementsByTagName('tr')[2].addEventListener('click',()=>{
+        if(II.cell0=='X'&&II.cell1=='X'&&II.cell2=='X'){
+          console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+            allert.innerHTML="X_WINNER";
+        }else if(II.cell3=='X'&&II.cell4=='X'&&II.cell5=='X'){
+          allert.innerHTML="X_WINNER";
+          console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+
+        }else if(II.cell6=='X'&&II.cell7=='X'&&II.cell8=='X'){
+          allert.innerHTML="X_WINNER";
+          console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+
+        }else if(II.cell0=='X'&&II.cell4=='X'&&II.cell8=='X'){
+          allert.innerHTML="X_WINNER";
+          console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+
+        }else if(II.cell2=='X'&&II.cell4=='X'&&II.cell6=='X'){
+          allert.innerHTML="X_WINNER";
+          console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
+        }else{
+          console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+        }
+      });
 
     </script>
   </body>
