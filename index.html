@@ -309,6 +309,7 @@
           return  newGame();
         });
       }
+      let winButton = true;
       function displayBlocked(){
 
         document.querySelector('#win').style.cssText=`
@@ -334,9 +335,13 @@
           `
         },1000);
         // setTimeout(window.location.reload(),3000);
-        return 0;
+        // return winnerX();
+        winButton=false;
       }
       function displayBlocked_O(){
+        if(winButton==false){
+          return 0;
+        }else{
         document.querySelector('#win').style.cssText=`
         display:flex;
         position:absolute;
@@ -360,6 +365,7 @@
           `
         },1000);
         // setTimeout(window.location.reload(),3000);
+        }
       }
 
       // document.getElementsByTagName('tr')[0].addEventListener('click',()=>{
