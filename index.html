@@ -350,7 +350,7 @@
         `;
         document.querySelector('#win').innerHTML="<span style='font-size:75px;color:gray;text-shadow:1px 1px 2px black;'>LosS</span>";
         setTimeout(()=>{
-          console.log('33333333333333333rthgsfgrsdafergserg');
+          console.log('WINNER - > O < -');
           document.querySelector('#win').style.cssText=`
           display:flex;
           position:absolute;
@@ -373,8 +373,7 @@
         //   case 'O' : console.log('OOX');
         //   return newGame();
         // }
-        function winnerX(){
-
+      function winnerX(){
         if(II.cell0=='X'&&II.cell1=='X'&&II.cell2=='X'){
           displayBlocked();
           allert.innerHTML="X_WINNER";
