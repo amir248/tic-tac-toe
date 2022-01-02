@@ -79,60 +79,70 @@
           if(`${aj}`==0){
             if(II.cell0=='empty'){
               II.cell0="X";
+              winnerX();
             }else{
               console.log("EST");
             }
           }else if(`${aj}`==1){
             if(II.cell1=='empty'){
               II.cell1="X";
+              winnerX();
             }else{
               console.log("EST");
             }
           }else if(`${aj}`==2){
             if(II.cell2=='empty'){
               II.cell2="X";
+              winnerX();
             }else{
               console.log("EST");
             }
           }else if(`${aj}`==3){
             if(II.cell3=='empty'){
               II.cell3="X";
+              winnerX();
             }else{
               console.log("EST");
             }
           }else if(`${aj}`==4){
             if(II.cell4=='empty'){
               II.cell4="X";
+              winnerX();
             }else{
               console.log("EST");
             }
           }else if(`${aj}`==5){
             if(II.cell5=='empty'){
               II.cell5="X";
+              winnerX();
             }else{
               console.log("EST");
             }
           }else if(`${aj}`==6){
             if(II.cell6=='empty'){
               II.cell6="X";
+              winnerX();
             }else{
               console.log("EST");
             }
           }else if(`${aj}`==7){
             if(II.cell7=='empty'){
               II.cell7="X";
+              winnerX();
             }else{
               console.log("EST");
             }
           }else if(`${aj}`==8){
             if(II.cell8=='empty'){
               II.cell8="X";
+              winnerX();
             }else{
               console.log("EST");
             }
           }else{
             if(II.cell9=='empty'){
               II.cell9="X";
+              winnerX();
             }else{
               console.log("EST");
             }
@@ -152,6 +162,7 @@
                 console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
                 II.cell0='O';
+                winnerO();
               }else if(II.cell0=='X'){
                 console.log('II.cell0==X');
                 // getRandomIntInclusive(0,8);
@@ -170,20 +181,16 @@
               if(II.cell1=='empty'){
                 console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
-
                 II.cell1='O';
+                winnerO();
               }else if(II.cell1=='X'){
                 console.log('II.cell0==X');
-                // getRandomIntInclusive(0,8);
                   return  newGame();
               }else if(II.cell1=='O'){
-                // getRandomIntInclusive(0,8);
-                  return  newGame();
+                  return newGame();
               }else{
                 console.log(random);
-                // getRandomIntInclusive(0,8);
-                return    newGame();
-
+                return newGame();
               }
               console.log('2222');
             }else if(`${random}`==2){
@@ -191,18 +198,15 @@
                 console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
                 II.cell2='O';
-
+                winnerO();
               }else if(II.cell2=='X'){
                 console.log('II.cell2==X');
-                // getRandomIntInclusive(0,8);
-                return    newGame();
+                return  newGame();
               }else if(II.cell2=='O'){
-                // getRandomIntInclusive(0,8);
-                  return  newGame();
+                  return newGame();
               }else{
                 console.log(random);
-                // getRandomIntInclusive(0,8);
-                return    newGame();
+                return newGame();
               }
               console.log('2');
             }else if(`${random}`==3){
@@ -210,18 +214,15 @@
                 console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
                 II.cell3='O';
-
+                winnerO();
               }else if(II.cell3=='X'){
                 console.log('II.cell3==X');
-                // getRandomIntInclusive(0,8);
                   return  newGame();
               }else if(II.cell3=='O'){
-                // getRandomIntInclusive(0,8);
-                return    newGame();
+                return newGame();
               }else{
                 console.log(random);
-                // getRandomIntInclusive(0,8);
-                  return  newGame();
+                  return newGame();
               }
               console.log('3333');
             }else if(`${random}`==4){
@@ -229,16 +230,15 @@
                 console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
                 II.cell4='O';
+                winnerO();
               }else if(II.cell4=='X'){
                 console.log('II.cell0==X');
                 return newGame();
               }else if(II.cell4=='O'){
-                // getRandomIntInclusive(0,8);
                 return newGame();
               }else{
                 console.log(random);
-                // getRandomIntInclusive(0,8);
-                return    newGame();
+                return newGame();
               }
               console.log('444442');
             }else if(`${random}`==5){
@@ -246,18 +246,14 @@
                 console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
                 II.cell5='O';
-
+                winnerO();
               }else if(II.cell5=='X'){
                 console.log('II.cell0==X');
-                // getRandomIntInclusive(0,8);
-                return    newGame();
+                return newGame();
               }else if(II.cell5=='O'){
-                // getRandomIntInclusive(0,8);
-                return    newGame();
+                return newGame();
               }else{
-                // getRandomIntInclusive(0,8);
-
-                return    newGame();
+                return newGame();
               }
               console.log('55552');
             }else if(`${random}`==6){
@@ -265,19 +261,15 @@
                 console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
                 II.cell6='O';
-
+                winnerO();
               }else if(II.cell6=='X'){
                 console.log('||II.cell0==X');
-                // getRandomIntInclusive(0,8);
-                return    newGame();
+                return newGame();
               }else if(II.cell6=='O'){
-                // getRandomIntInclusive(0,8);
-                  return  newGame();
+                  return newGame();
               }else{
                 console.log(random);
-                // getRandomIntInclusive(0,8);
-
-                return    newGame();
+                return newGame();
               }
               console.log('66662');
             }else if(`${random}`==7){
@@ -285,17 +277,15 @@
                 console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
                 II.cell7='O';
+                winnerO();
               }else if(II.cell7=='X'){
                 console.log('||II.cell0==X');
-                // getRandomIntInclusive(0,8);
-                return    newGame();
+                return newGame();
               }else if(II.cell7=='O'){
-                // getRandomIntInclusive(0,8);
-                return    newGame();
+                return newGame();
               }else{
                 console.log(random);
-                // getRandomIntInclusive(0,8);
-                return    newGame();
+                return newGame();
               }
               console.log('7772');
             }else if(`${random}`==8){
@@ -303,29 +293,24 @@
                 console.log('II.cell==empty');
                 document.getElementsByTagName('td')[`${random}`].innerHTML=`O`;
                 II.cell8='O';
-
+                winnerO();
               }else if(II.cell8=='X'){
                 console.log('||II.cell0==X');
-                // getRandomIntInclusive(0,8);
                 return    newGame();
               }else if(II.cell8=='O'){
-                // getRandomIntInclusive(0,8);
-                return    newGame();
+                return newGame();
               }else{
                 console.log(random);
-                // getRandomIntInclusive(0,8);
-                return    newGame();
+                return newGame();
               }
               console.log('888');
             }
           }
           return  newGame();
-
-
         });
-
       }
       function displayBlocked(){
+
         document.querySelector('#win').style.cssText=`
         display:flex;
         position:absolute;
@@ -349,6 +334,7 @@
           `
         },1000);
         // setTimeout(window.location.reload(),3000);
+        return 0;
       }
       function displayBlocked_O(){
         document.querySelector('#win').style.cssText=`
@@ -376,7 +362,7 @@
         // setTimeout(window.location.reload(),3000);
       }
 
-      document.getElementsByTagName('tr')[0].addEventListener('click',()=>{
+      // document.getElementsByTagName('tr')[0].addEventListener('click',()=>{
         // switch(II.cell0){
         //   // console.log('brack;');
         //   case 'X' : console.log('XXX');
@@ -384,6 +370,7 @@
         //   case 'O' : console.log('OOX');
         //   return newGame();
         // }
+        function winnerX(){
         if(II.cell0=='X'&&II.cell1=='X'&&II.cell2=='X'){
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
             allert.innerHTML="X_WINNER";
@@ -426,12 +413,7 @@
           ahtung.innerHTML="🤩Крестики победили!";
           displayBlocked();
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
-        }else{
-          console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
-        }
-      });
-      document.getElementsByTagName('tr')[1].addEventListener('click',()=>{
-        if(II.cell0=='X'&&II.cell1=='X'&&II.cell2=='X'){
+        }else if(II.cell0=='X'&&II.cell1=='X'&&II.cell2=='X'){
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
             allert.innerHTML="X_WINNER";
@@ -440,19 +422,16 @@
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
-
           displayBlocked();
         }else if(II.cell6=='X'&&II.cell7=='X'&&II.cell8=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
-
           displayBlocked();
         }else if(II.cell0=='X'&&II.cell4=='X'&&II.cell8=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
-
           displayBlocked();
         }else if(II.cell2=='X'&&II.cell4=='X'&&II.cell6=='X'){
           allert.innerHTML="X_WINNER";
@@ -474,12 +453,7 @@
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
           displayBlocked();
-        }else{
-          console.log('22222222222222222222222222222222222222222222222222')
-        }
-      });
-      document.getElementsByTagName('tr')[2].addEventListener('click',()=>{
-        if(II.cell0=='X'&&II.cell1=='X'&&II.cell2=='X'){
+        }else if(II.cell0=='X'&&II.cell1=='X'&&II.cell2=='X'){
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
             allert.innerHTML="X_WINNER";
@@ -488,19 +462,16 @@
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
-
           displayBlocked();
         }else if(II.cell6=='X'&&II.cell7=='X'&&II.cell8=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
-
           displayBlocked();
         }else if(II.cell0=='X'&&II.cell4=='X'&&II.cell8=='X'){
           allert.innerHTML="X_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
-
           displayBlocked();
         }else if(II.cell2=='X'&&II.cell4=='X'&&II.cell6=='X'){
           allert.innerHTML="X_WINNER";
@@ -525,8 +496,11 @@
         }else{
           console.log('!33333333333333333333333333333333333333333333333333333333');
         }
-      });
-      document.getElementsByTagName('tr')[0].addEventListener('click',()=>{
+
+}
+
+      // document.getElementsByTagName('tr')[0].addEventListener('click',()=>{
+    function winnerO(){
         if(II.cell0=='O'&&II.cell1=='O'&&II.cell2=='O'){
             allert.innerHTML="O_WINNER";
     displayBlocked_O();
@@ -534,17 +508,14 @@
           allert.innerHTML="O_WINNER";
         displayBlocked_O();
           ahtung.innerHTML="😱 Нолики победили!";
-
         }else if(II.cell6=='O'&&II.cell7=='O'&&II.cell8=='O'){
           allert.innerHTML="O_WINNER";
     displayBlocked_O();
           ahtung.innerHTML="😱 Нолики победили!";
-
         }else if(II.cell0=='O'&&II.cell4=='O'&&II.cell8=='O'){
           allert.innerHTML="O_WINNER";
     displayBlocked_O();
           ahtung.innerHTML="😱 Нолики победили!";
-
         }else if(II.cell2=='O'&&II.cell4=='O'&&II.cell6=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
@@ -562,96 +533,67 @@
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
           displayBlocked_O();
-        }else{
-          console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
-        }
-      });
-      document.getElementsByTagName('tr')[1].addEventListener('click',()=>{
-        if(II.cell0=='O'&&II.cell1=='O'&&II.cell2=='O'){
+        }else if(II.cell0=='O'&&II.cell1=='O'&&II.cell2=='O'){
           ahtung.innerHTML="😱 Нолики победили!";
             allert.innerHTML="O_WINNER";
             displayBlocked_O();
-
         }else if(II.cell3=='O'&&II.cell4=='O'&&II.cell5=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
-
           displayBlocked_O();
-
         }else if(II.cell6=='O'&&II.cell7=='O'&&II.cell8=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
-
           displayBlocked_O();
-
         }else if(II.cell0=='O'&&II.cell4=='O'&&II.cell8=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
-
           displayBlocked_O();
         }else if(II.cell2=='O'&&II.cell4=='O'&&II.cell6=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
           displayBlocked_O();
-
-        }else if(II.cell0=='X'&&II.cell3=='X'&&II.cell6=='X'){
+        }else if(II.cell0=='O'&&II.cell3=='O'&&II.cell6=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
           console.log("line 1 WINNER!!!!!!!!!!!!!!!!");
           displayBlocked_O();
-
         }else if(II.cell2=='O'&&II.cell5=='O'&&II.cell8=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
           displayBlocked_O();
-
         }else if(II.cell1=='O'&&II.cell4=='O'&&II.cell7=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
           displayBlocked_O();
-
-        }else{
-          console.log('22222222222222222222222222222222222222222222222222')
-        }
-      });
-      document.getElementsByTagName('tr')[2].addEventListener('click',()=>{
-        if(II.cell0=='O'&&II.cell1=='O'&&II.cell2=='O'){
+        }else if(II.cell0=='O'&&II.cell1=='O'&&II.cell2=='O'){
           ahtung.innerHTML="😱 Нолики победили!";
             allert.innerHTML="O_WINNER";
             displayBlocked_O();
-
         }else if(II.cell3=='O'&&II.cell4=='O'&&II.cell5=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
           displayBlocked_O();
-
         }else if(II.cell6=='O'&&II.cell7=='O'&&II.cell8=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
-
           displayBlocked_O();
-
         }else if(II.cell0=='O'&&II.cell4=='O'&&II.cell8=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="🤩Крестики победили!";
-
           displayBlocked_O();
-
         }else if(II.cell2=='O'&&II.cell4=='O'&&II.cell6=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
           displayBlocked_O();
-
         }else if(II.cell0=='O'&&II.cell3=='O'&&II.cell6=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
           displayBlocked_O();
-
         }else if(II.cell2=='O'&&II.cell5=='O'&&II.cell8=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
           displayBlocked_O();
-
         }else if(II.cell1=='O'&&II.cell4=='O'&&II.cell7=='O'){
           allert.innerHTML="O_WINNER";
           ahtung.innerHTML="😱 Нолики победили!";
@@ -659,7 +601,7 @@
         }else{
           console.log('!33333333333333333333333333333333333333333333333333333333')
         }
-      });
+      }
     </script>
   </body>
   <!-- Yandex.Metrika counter -->
