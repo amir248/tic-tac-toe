@@ -149,7 +149,46 @@
           }
           document.getElementsByTagName('td')[`${aj}`].innerHTML=`X`;
 
+          // class twoHod(){
+              if(II.cell0=='x'){
+                console.log("-------Cell0==X");
+              }else if(II.cell1=='x'){
+                console.log("---------Cell1==X");
+
+              }else if(II.cell2=='x'){
+                console.log("--------Cell2==X");
+              }else if(II.cell3=='x'){
+                console.log("---------Cell3==X");
+              }else{
+                console.log("-----------------------------------------");
+              }
+          // }
+          class twoHod{
+
+            constructor(XXX){
+              this.XXX=II.cell[XXX];
+            }
+            sayHi(){
+
+              console.log(this.XXX=II.cell[XXX]);
+            }
+              // if(II.cell0=='x'){
+              //   console.log("-------Cell0==X");
+              // }else if(II.cell1=='x'){
+              //   console.log("---------Cell1==X");
+              //
+              // }else if(II.cell2=='x'){
+              //   console.log("--------Cell2==X");
+              // }else if(II.cell3=='x'){
+              //   console.log("---------Cell3==X");
+              // }else{
+              //   console.log("-----------------------------------------");
+              // }
+            }
           function newGame(){
+            if(II.cell0||II.cell1||II.cell2||II.cell3||II.cell4||II.cell5||II.cell6||II.cell7||II.cell8=='0'){
+              console.log("NULL EST");
+            }
             function getRandomIntInclusive(min, max) {
               min = Math.ceil(min);
               max = Math.floor(max);
@@ -323,7 +362,7 @@
         `;
         document.querySelector('#win').innerHTML="<span style='font-size:75px;color:yellow;text-shadow:1px 1px 2px black;'>winner</span>";
         setTimeout(()=>{
-          console.log('33333333333333333rthgsfgrsdafergserg');
+          console.log('WINNER X');
           document.querySelector('#win').style.cssText=`
           display:flex;
           position:absolute;
